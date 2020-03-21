@@ -9,4 +9,29 @@
 script = ExtResource( 1 )
 
 [node name="App" type="Node2D" parent="."]
+scale = Vector2( 2, 2 )
 script = ExtResource( 2 )
+
+[node name="AwesomeButton" type="Button" parent="App"]
+margin_left = 78.575
+margin_top = 46.1
+margin_right = 231.575
+margin_bottom = 117.1
+rect_pivot_offset = Vector2( 141.075, 41.7 )
+text = "Awesome Button"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CrashButton" type="Button" parent="App"]
+margin_left = 281.875
+margin_top = 44.675
+margin_right = 434.875
+margin_bottom = 115.675
+rect_pivot_offset = Vector2( 141.075, 41.7 )
+text = "Crash Button"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="App/AwesomeButton" to="App" method="_on_AwesomeButton_pressed"]
+[connection signal="pressed" from="App/CrashButton" to="App" method="_on_CrashButton_pressed"]
