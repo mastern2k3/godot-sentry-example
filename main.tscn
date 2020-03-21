@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/SentryController.cs" type="Script" id=1]
+[ext_resource path="res://src/App.cs" type="Script" id=2]
+
+[node name="main" type="Node2D"]
+
+[node name="SentryController" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="App" type="Node2D" parent="."]
+script = ExtResource( 2 )
