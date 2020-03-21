@@ -56,7 +56,8 @@
   <ItemGroup>
 
     <Reference Include="Sentry, Version=2.1.0.0">
-      <HintPath>$(ProjectDir)/packages/Sentry.2.1.0/lib/net461/Sentry.dll</HintPath>
+      <HintPath>$(ProjectDir)/../forks/sentry-dotnet/src/Sentry/bin/Release/net461/Sentry.dll</HintPath>
+      <!-- <HintPath>$(ProjectDir)/packages/Sentry.2.1.0/lib/net461/Sentry.dll</HintPath> -->
       <Private>True</Private>
     </Reference>
     <Reference Include="Sentry.Protocol, Version=2.1.0.0">
