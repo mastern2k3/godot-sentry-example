@@ -22,6 +22,10 @@ build-csharp:
 	cd $(DIR); \
 	$(GODOT) --build-solutions -q
 
+build-android:
+	cd $(DIR); \
+	$(GODOT) --export Android $(DIR)/$(BUILD_FOLDER)
+
 restore:
 	$(MONO) $(NUGET) restore
 
